@@ -1,0 +1,31 @@
+.navDiv a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #475056;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .navDiv a{
+    color: #475056;  
+  }
+  
+  .navDiv a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #4ea819;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    color: #475056;
+  }
+  
+  .navDiv a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #475056;
+  }
